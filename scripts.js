@@ -31,3 +31,34 @@ for (let element of numbers){
     }
 }
 document.getElementById("two").innerHTML = evenNumbers;
+
+/* 
+Use a for...of loop to concatenate all the elements of an array into a single string.
+
+Input: var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
+
+Output:
+
+'TomTimTinTik'
+*/
+var numbers2 = ['Tom', 'Tim', 'Tin', 'Tik'];
+let concatNumbers=""; 
+
+for (let element of numbers2){
+    concatNumbers+=element;
+}
+document.getElementById("three").innerHTML = concatNumbers;
+
+/* 
+Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
+
+Input: const statement = 'I am a hard working person'
+
+Output:
+
+'person working hard a am I'
+*/
+
+const statement = 'I am a hard working person'
+let arr = statement.split(" ").reverse().join(" ");
+document.getElementById("four").innerHTML = arr;
